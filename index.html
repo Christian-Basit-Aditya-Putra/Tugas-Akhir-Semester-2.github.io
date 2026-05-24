@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arutala Jogja</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    if (!sessionStorage.getItem("welcomeShown")) {
+        alert("Selamat datang di Arutala Jogja! Jelajahi keindahan budaya, kuliner, dan pesona Yogyakarta melalui situs kami.");
+
+        sessionStorage.setItem("welcomeShown", "true");
+    }
+</script>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark main-color fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><span>Arutala</span>Jogja</a>
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item me-5">
+          <a class="nav-link active" href="#">Beranda</a>
+        </li>
+
+        <li class="nav-item me-5">
+          <a class="nav-link" href="budaya.html">Budaya</a>
+        </li>
+
+        <li class="nav-item me-5">
+          <a class="nav-link" href="kuliner.html">Kuliner</a>
+        </li>
+
+        <li class="nav-item me-5">
+          <a class="nav-link" href="tentang.html">Tentang</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- Banner -->
+<div class="container-fluid banner d-flex align-items-center">
+  <div class="container">
+       <h1 class="text-light text1 text-center  mb-1">Arutala Jogja</h1>
+       <h2 class="text-light text2 text-center  mb-1">Menjelajah budaya dan cerita Yogyakarta</h2>
+       <button class="btn btn-light text-dark d-block mx-auto mt-4"><a href="#pesona" class="text-decoration-none text-dark">Jelajahi Sekarang</a></button>
+       </div>
+  </div>
+</div>
+
+
+<!-- Video Highlight -->
+<section class="video-highlight py-5" id="pesona">
+  <div class="container">
+
+    <!-- Judul -->
+    <h2 class="text-center mb-5">Pesona Budaya & Kuliner Jogja</h2>
+
+    <!-- (Budaya) -->
+    <div class="row align-items-center mb-5">
+
+      <div class="col-md-6 fade-in">
+        <video autoplay muted loop class="video-box">
+          <source src="mp4/tari.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="col-md-6 fade-in">
+        <h4>Budaya Jogja</h4>
+        <p>
+          Yogyakarta dikenal sebagai pusat budaya Jawa yang masih sangat kental hingga saat ini.
+          Tradisi yang diwariskan turun-temurun tetap dijaga dan menjadi bagian dari kehidupan masyarakat sehari-hari.
+          Mulai dari seni pertunjukan seperti wayang kulit dan tari tradisional, hingga upacara adat yang sarat makna,
+          semuanya mencerminkan kekayaan budaya yang tidak lekang oleh waktu.
+        </p>
+        <p>
+          Keberadaan Keraton Yogyakarta sebagai pusat kebudayaan juga memperkuat identitas kota ini sebagai daerah
+          istimewa. Pengunjung tidak hanya menikmati keindahan visual, tetapi juga dapat merasakan nilai filosofi
+          kehidupan yang terkandung dalam setiap tradisi yang ada.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- (Kuliner) -->
+    <div class="row align-items-center">
+
+      <div class="col-md-6 order-md-2 fade-in">
+        <video autoplay muted loop class="video-box">
+          <source src="mp4/makananvid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="col-md-6 order-md-1 fade-in">
+        <h4>Kuliner Khas Jogja</h4>
+        <p>
+          Selain kaya akan budaya, Yogyakarta juga terkenal dengan ragam kuliner khas yang menggugah selera.
+          Cita rasa manis yang menjadi ciri khas daerah ini memberikan pengalaman unik bagi para wisatawan.
+          Hidangan seperti gudeg, bakpia, hingga berbagai jajanan tradisional dapat dengan mudah ditemukan
+          di berbagai sudut kota.
+        </p>
+        <p>
+          Tidak hanya soal rasa, kuliner di Yogyakarta juga menyimpan cerita dan sejarah panjang.
+          Banyak tempat makan legendaris yang telah berdiri puluhan tahun dan tetap mempertahankan resep asli mereka.
+          Hal ini menjadikan wisata kuliner di Yogyakarta sebagai pengalaman yang tidak hanya lezat,
+          tetapi juga penuh makna dan kenangan.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Sejarah -->
+<section id="history">
+    <div class="sejarah">
+        <h2 class="text-center mb-5 fade-in">Sejarah Singkat</h2>
+
+            <div class="gambar">
+                <div class="about-img">
+                    <img src="img/sejarah.jpg" alt="Sejarah">
+                </div>
+                <div class="content">
+                    <h3>Lahirnya Yogyakarta sebagai Kota Budaya</h3>
+                    <p>Sejarah Yogyakarta bermula dari Perjanjian Giyanti pada 13 Februari 1755, yang membagi Kerajaan Mataram Islam menjadi Kasunanan Surakarta dan Kasultanan Ngayogyakarta Hadiningrat.</p>
+                    <p>Didirikan oleh Pangeran Mangkubumi (Sultan Hamengku Buwono I), keraton resmi ditempati pada 7 Oktober 1756. Yogyakarta menjadi Daerah Istimewa (DIY) karena peran besarnya mendukung NKRI pada 1945.</p>
+                    <p>
+                    Seiring perkembangan zaman, Yogyakarta tetap mempertahankan identitasnya sebagai kota budaya meskipun modernisasi terus berkembang. Hal ini menjadikan Yogyakarta unik dibandingkan kota lainnya.
+                    </p>
+                </div>
+            </div>
+     </div>
+     <p class="sejarah-bawah">
+      Hingga kini, Yogyakarta tetap dikenal sebagai daerah istimewa yang mampu menjaga dan melestarikan warisan budaya serta sejarahnya di tengah arus perkembangan zaman yang semakin pesat. Nilai-nilai tradisi yang telah diwariskan secara turun-temurun tetap hidup dan menjadi bagian penting dalam kehidupan masyarakat sehari-hari. Di sisi lain, kemajuan dalam bidang pendidikan, pariwisata, dan ekonomi kreatif menjadikan Yogyakarta sebagai kota yang dinamis tanpa kehilangan jati dirinya. Perpaduan antara nuansa tradisional dan kehidupan modern inilah yang menciptakan daya tarik tersendiri, sehingga setiap orang yang berkunjung tidak hanya menikmati keindahan, tetapi juga merasakan pengalaman yang berkesan dan sulit dilupakan.
+     </p>
+  </section>
+
+
+<!-- Gallery -->
+<section class="gallery py-5">
+  <div class="container">
+
+    <h2 class="text-center mb-5 fade-in">Keindahan Jogja</h2>
+
+    <div class="gallery-grid">
+
+      <div class="item large fade-in">
+        <div class="gallery-item">
+          <img src="img/malioboro.jpg" alt="Malioboro">
+          <div class="overlay">
+            <h5>Malioboro</h5>
+            <p>Jalan ikonik pusat wisata Jogja.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item small fade-in">
+        <div class="gallery-item">
+          <img src="img/bni.jpg" alt="Titik Nol Jogja">
+          <div class="overlay">
+            <h5>Titik Nol KM</h5>
+            <p>Spot foto favorit di pusat kota.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item small fade-in">
+        <div class="gallery-item">
+          <img src="img/prambanan.jpg" alt="Candi Prambanan">
+          <div class="overlay">
+            <h5>Prambanan</h5>
+            <p>Candi Hindu terbesar di Indonesia.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item large fade-in">
+        <div class="gallery-item">
+          <img src="img/obelix.jpg" alt="Obelix Hills">
+          <div class="overlay">
+            <h5>Obelix Hills</h5>
+            <p>Spot sunset modern dengan view indah.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item large fade-in">
+        <div class="gallery-item">
+          <img src="img/keraton.jpg" alt="Keraton Yogyakarta">
+          <div class="overlay">
+            <h5>Keraton</h5>
+            <p>Pusat budaya dan sejarah Jogja.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item small fade-in">
+        <div class="gallery-item">
+          <img src="img/tritis.jpg" alt="Pantai Parangtritis">
+          <div class="overlay">
+            <h5>Parangtritis</h5>
+            <p>Pantai legendaris di selatan Jogja.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!--Penutup-->
+<section class="penutup text-center py-5">
+  <div class="container">
+    <h3>Yogyakarta adalah cerita yang tak pernah selesai,
+      selalu ada alasan untuk kembali.</h3>
+    <p>
+      Jelajahi lebih dalam pesona Yogyakarta melalui budaya,
+      kuliner, dan keindahan wisatanya.
+    </p>
+
+    <a href="budaya.html" class="btn btn-light mt-3">
+  Jelajahi Sekarang
+</a>
+  </div>
+</section>
+
+
+
+
+
+<!--Footer-->
+
+    <footer class="footer bg-dark text-light py-4">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-bold">Arutala Jogja</h5>
+            <p class="text-secondary small">
+              Menjelajah budaya dan cerita Yogyakarta
+            </p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold mb-3">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-secondary text-decoration-none"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a href="budaya.html" class="text-secondary text-decoration-none"
+                  >Budaya</a
+                >
+              </li>
+              <li>
+                <a href="kuliner.html" class="text-secondary text-decoration-none"
+                  >Kuliner</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tentang.html"
+                  class="text-secondary text-decoration-none"
+                  >Tentang</a
+                >
+              </li>
+            </ul>
+          </div>
+         
+      <div class="col-md-4 bear">
+          <h5>Ikuti Kami</h5>
+          <ul class="list-unstyled text-secondary small">
+            <li class="mb-1"><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-instagram">Instagram</i></a></li>
+            <li class="mb-1"><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-youtube">YouTube</i></a></li>
+            <li class="mb-1"><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-tiktok">TikTok</i></a></li>
+            <li class="mb-1"><a href="#" class="text-secondary text-decoration-none"><i class="bi bi-facebook">Facebook</i></a></li>
+          </ul>
+        </div>
+      </div>
+        <hr class="border-secondary mt-4 mb-3" />
+        <p class="text-center text-secondary small mb-0">
+          &copy; 2026 Arutala Jogja. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+</script>
+
+
+</body>
+</html>
